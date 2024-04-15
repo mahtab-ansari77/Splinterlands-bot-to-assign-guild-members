@@ -10,8 +10,8 @@ driver.maximize_window()
 
 login = driver.find_element(By.XPATH, "//button[text()='Log In']").click()
 driver.implicitly_wait(10)
-driver.find_element(By.CSS_SELECTOR, "input[placeholder='EMAIL / USERNAME']").send_keys("your_username")
-driver.find_element(By.NAME, "password").send_keys("your_posting_key")
+driver.find_element(By.CSS_SELECTOR, "input[placeholder='EMAIL / USERNAME']").send_keys("your_username")  #add your username here
+driver.find_element(By.NAME, "password").send_keys("your_posting_key")   #add your posting key here
 driver.find_element(By.XPATH, "//button[@type = 'submit']").click()
 time.sleep(10)
 driver.refresh()
